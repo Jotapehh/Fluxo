@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,13 +88,14 @@
             min-height: 80px;
         }
 
-        @media (width <= 555px) {
+        @media (width <=555px) {
             section {
                 width: 90%;
             }
         }
     </style>
 </head>
+
 <body>
     <section>
         <div>
@@ -111,4 +113,3 @@
         </form>
     </section>
 </body>
-</html>
