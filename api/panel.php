@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         
     }
 
-    $json = file_get_contents("models/logins.json");
+    $json = file_get_contents("api/models/logins.json");
     $logins = json_decode($json, true);
     
     for ($i = 0; $i < count($logins); $i++) {
@@ -21,11 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if ($perfilAutorizado === true) {
-        include_once "models/panelModel.php";
+        include_once "api/models/panelModel.php";
     } else {
-        header("Location: index.php");
+        header("Location: api/index.php");
     }
 }
 else {
-    header("Location: index.php");
+    header("Location: api/index.php");
+
 }
