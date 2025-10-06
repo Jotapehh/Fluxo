@@ -15,9 +15,10 @@
             <input type="text" name="username" placeholder="Usuario" required>
             <input type="password" name="password" placeholder="Senha" required>
             <input type="submit" value="Entrar">
-            <p>Não tem uma conta? <a href="register.php">Cadastra-se</a></p>
+            <p>Não tem uma conta? <a href="api/register.php">Cadastra-se</a></p>
         </form>
     </section>
 </body>
+
 
 </html>
